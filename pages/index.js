@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { Input, Button, Box, Spinner, Text  } from "@chakra-ui/react";
+import "../utils/pdfWorkerPolyfill";
 import * as pdfjsLib from "pdfjs-dist/webpack";  // Import pdfjs-dist
 import Layout from "../components/Layout";  // Import Layout component
 import { useHistory } from "../context/HistoryContext";  // Import HistoryContext
 import { getCompletion } from "@/utils/openaiHelper";
-import "../utils/pdfWorkerPolyfill";
 
 export default function Home() {
   const [file, setFile] = useState(null);
