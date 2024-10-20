@@ -5,8 +5,7 @@ import * as pdfjsLib from "pdfjs-dist/webpack";  // Import pdfjs-dist
 import Layout from "../components/Layout";  // Import Layout component
 import { useHistory } from "../context/HistoryContext";  // Import HistoryContext
 import { getCompletion } from "@/utils/openaiHelper";
-import "core-js/full/promise/with-resolvers.js";
-
+import "../utils/pdfWorkerPolyfill";
 
 export default function Home() {
   const [file, setFile] = useState(null);
