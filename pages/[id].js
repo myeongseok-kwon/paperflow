@@ -60,18 +60,18 @@ export default function PDFPage() {
 You will be given the research paper content and summarizing diagram mermaid code. You should keep the basic diagram, but upgrade the diagram by following instruction.
 아래의 Stage 1 - Stage 2  순서로 생각의 흐름을 따라가세요. Stage 1는 내부적으로 처리하고, 최종 답변으로 Stage 2의 Mermaid 코드만 제공해주세요. 모든 critical thought 이 다이어그램에 드러나야 합니다.
 
-<Stage 4>
+<Stage 1>
 
 1. 모든 답변 내용은 한글이 되어야 한다.
 2. 각 문장마다 출처 표시는 하지 않아도 된다.
-3. 기존 Diagram에서의 section과 각 섹션별 claim-evidence 관계에 대해 비판적인 접근을 취할 거야. 비판적인 접근은 크게 두 가지로 구성 돼. 첫 번째는 '이 연구에서 제안하는 method를 더욱 보호하고 강화하는 방식' 두 번째는 '이 연구의 완결성과 논리를 비판하는 Devil's Advocate'의 역할이야. 좀 더 자세히 말하면, 첫 번째 접근에서는 이 연구에서 하고 있는 방식을 더욱 발전시키면 어떻게 할지 기존 연구 네트워크를 확장하는 거고, 두 번째 접근에서는 마치 새로운 접근 방식 그리고 관련된 노트를 추가하면서, 현재 method의 문제점을 지적하고 이를 더 보완할 방식을 언급할 수 있게 하는 거야.
+3. 기존 Diagram에서의 section과 각 섹션별 claim-evidence 관계에 대해 비판적인 접근을 취할 거야. 이 연구의 완결성과 논리를 비판하는 Devil's Advocate'의 역할을 수행해야해. 여기서는 새로운 접근 방식 그리고 관련된 노트를 추가하면서, 현재 method의 문제점을 지적하고 이를 더 보완할 방식을 언급할 수 있게 하는 거야.
 4. 이 때, 각 섹션 중 어떠한 claim 또는 Evidence에 대한 비판인지를 함께 기억해 줘. 나중에 다이어그램에 반영하고 싶어.
-5. 각 접근 방식 기준으로 최소한 5개씩 부탁해. 즉, '이 연구에서 제안하는 method를 더욱 보호하고 강화하는 방식' 에 대한 거 5개 그리고 '이 연구의 완결성과 논리를 비판하는 Devil's Advocate' 에 대한 거 5개야. 질문의 난이도는 대학원생 박사 또는 교수진 정도로 아주 연구론적으로 집중되게 해줘.
+5. 최소 10개의 아이디어를 부탁해. 질문의 난이도는 대학원생 박사 또는 교수진 정도로 아주 연구론적으로 집중되게 해줘.
 6. 만약 의미적으로 같은 용어 (e.g., GAN = Generative Adversarial Network)이 나온다면 모두 같은 용어 (e.g., GAN)으로 통일해줘. 즉, "GAN" 관련 용어는 모두 "GAN"으로 통일시키는 거야. 예시: "The proposed model ($7) operates in ($R1, $H ) an unsupervised manner. ($8)"라는 예시에서는"proposed model"는 이 논문에 제시하는 방법론/모델이니깐 이거에 대한 건 전부 이걸로 태깅해야겠지 또한 "unsupervised manner."는 unsupervised model 같은 용어와도 의미론적으로 같을테니 모두 이걸로 묶어야겠지.
 
 ---
 
-<Stage 5>
+<Stage 2>
 이제, 방금 답변을 기준으로 예전에 너가 나한테 줬던 머메이드 다이어그램에 위 답변을 추가시켜줘. 누락없이 전부 다 포함시켜줘. 너가 주었던 머메이드 다이어그램을 아래에 줄게. 비판적인 접근 중 첫 번째 방식인'이 연구에서 제안하는 method를 더욱 보호하고 강화하는 방식'는 classDef critique_approach_1 (fill: #00FFFF, stroke: #0000FF)로, 두 번째는 '이 연구의 완결성과 논리를 비판하는 Devil's Advocate'는  classDef critique_approach_2(fill: #FF355E, stroke: #8B0000)로 부탁할게. 이 때 각 접근이 비판했던 대상이 노드들에 edge를 연결해서 한 눈에 볼 수 있는 dynamic graph를 줘. 즉, critique_approach_1, critique_approach_2 노드들은 따로 하나의 section으로 모여있기 보단, 기존의 섹션 내부읜 노드들과 연결되어 있어야 해. syntax에러가 나지 않게 주의해줘.
 
 ---
@@ -189,7 +189,7 @@ L2 --> C2
           <Textarea
             value={feedback}
             onChange={(e) => setFeedback(e.target.value)}
-            placeholder="Add feedback or modify comments"
+            placeholder="Add feedback or comments for Regeneration"
           />
           <HStack spacing={4}>
             <Button colorScheme="blue" onClick={handleRegenerate} isDisabled={regenerateLoading}>
@@ -209,7 +209,7 @@ L2 --> C2
                     Automatically Upgrading...
                 </>
                 ) : (
-                "Auto-upgrade Diagram with AI"
+                "Find Limitations and Upgrade with AI"
                 )}
             </Button>
           </HStack>
