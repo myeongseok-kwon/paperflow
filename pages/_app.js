@@ -1,5 +1,14 @@
-import "@/styles/globals.css";
+import { ChakraProvider } from "@chakra-ui/react";
+import { HistoryProvider } from "../context/HistoryContext";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <ChakraProvider>
+      <HistoryProvider>
+        <Component {...pageProps} />
+      </HistoryProvider>
+    </ChakraProvider>
+  );
 }
+
+export default MyApp;
