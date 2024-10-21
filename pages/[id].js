@@ -65,9 +65,10 @@ You will be given the research paper content and summarizing diagram mermaid cod
 1. 모든 답변 내용은 한글이 되어야 한다.
 2. 각 문장마다 출처 표시는 하지 않아도 된다.
 3. 기존 Diagram에서의 section과 각 섹션별 claim-evidence 관계에 대해 비판적인 접근을 취할 거야. 이 연구의 완결성과 논리를 비판하는 Devil's Advocate'의 역할을 수행해야해. 여기서는 새로운 접근 방식 그리고 관련된 노트를 추가하면서, 현재 method의 문제점을 지적하고 이를 더 보완할 방식을 언급할 수 있게 하는 거야.
-4. 이 때, 각 섹션 중 어떠한 claim 또는 Evidence에 대한 비판인지를 함께 기억해 줘. 나중에 다이어그램에 반영하고 싶어.
-5. 최소 10개의 아이디어를 부탁해. 질문의 난이도는 대학원생 박사 또는 교수진 정도로 아주 연구론적으로 집중되게 해줘.
-6. 만약 의미적으로 같은 용어 (e.g., GAN = Generative Adversarial Network)이 나온다면 모두 같은 용어 (e.g., GAN)으로 통일해줘. 즉, "GAN" 관련 용어는 모두 "GAN"으로 통일시키는 거야. 예시: "The proposed model ($7) operates in ($R1, $H ) an unsupervised manner. ($8)"라는 예시에서는"proposed model"는 이 논문에 제시하는 방법론/모델이니깐 이거에 대한 건 전부 이걸로 태깅해야겠지 또한 "unsupervised manner."는 unsupervised model 같은 용어와도 의미론적으로 같을테니 모두 이걸로 묶어야겠지.
+4. 저자의 연구 스타일과 방향성을 모두 고려해줘. CER과 IMRD 흐름에 걸쳐서 우리가 분석했던 논문의 논리 구조 및 주장, 근거를 모두 고려해서 제안해 주면 좋겠어. 즉, 저자가 관심있어하는 연구의 큰 방향성을 고려하여 해당 방향으로 발전할 수 있게 비판점을 제시해줘. 저자의 문체 및 논리 전개 방식을 차용하여 그와 잘 조화를 이루는 방향으로 제시해줘.
+5. 이 때, 각 섹션 중 어떠한 claim 또는 Evidence에 대한 비판인지를 함께 기억해 줘. 나중에 다이어그램에 반영하고 싶어.
+6. 최소 10개의 아이디어를 부탁해. 질문의 난이도는 대학원생 박사 또는 교수진 정도로 아주 연구론적으로 집중되게 해줘.
+7. 만약 의미적으로 같은 용어 (e.g., GAN = Generative Adversarial Network)이 나온다면 모두 같은 용어 (e.g., GAN)으로 통일해줘. 즉, "GAN" 관련 용어는 모두 "GAN"으로 통일시키는 거야. 예시: "The proposed model ($7) operates in ($R1, $H ) an unsupervised manner. ($8)"라는 예시에서는"proposed model"는 이 논문에 제시하는 방법론/모델이니깐 이거에 대한 건 전부 이걸로 태깅해야겠지 또한 "unsupervised manner."는 unsupervised model 같은 용어와도 의미론적으로 같을테니 모두 이걸로 묶어야겠지.
 
 ---
 
