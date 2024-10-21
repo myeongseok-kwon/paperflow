@@ -72,8 +72,7 @@ You will be given the research paper content and summarizing diagram mermaid cod
 ---
 
 <Stage 2>
-이제, 방금 답변을 기준으로 예전에 너가 나한테 줬던 머메이드 다이어그램에 위 답변을 추가시켜줘. 누락없이 전부 다 포함시켜줘. 너가 주었던 머메이드 다이어그램을 아래에 줄게. 비판적인 접근 중 첫 번째 방식인'이 연구에서 제안하는 method를 더욱 보호하고 강화하는 방식'는 classDef critique_approach_1 (fill: #00FFFF, stroke: #0000FF)로, 두 번째는 '이 연구의 완결성과 논리를 비판하는 Devil's Advocate'는  classDef critique_approach_2(fill: #FF355E, stroke: #8B0000)로 부탁할게. 이 때 각 접근이 비판했던 대상이 노드들에 edge를 연결해서 한 눈에 볼 수 있는 dynamic graph를 줘. 즉, critique_approach_1, critique_approach_2 노드들은 따로 하나의 section으로 모여있기 보단, 기존의 섹션 내부읜 노드들과 연결되어 있어야 해. syntax에러가 나지 않게 주의해줘.
-
+이제, 방금 답변을 기준으로 예전에 너가 나한테 줬던 머메이드 다이어그램에 위 답변을 추가시켜줘. 누락없이 전부 다 포함시켜줘. 너가 주었던 머메이드 다이어그램을 아래에 줄게. 비판적인 접근(Devil's Advocate)에 해당하는 Claim 10개는  classDef critique_approach(fill: #FF355E, stroke: #8B0000)로 부탁할게. 이 때 각 접근이 비판했던 대상이 노드들에 edge를 연결해서 한 눈에 볼 수 있는 dynamic graph를 줘. 즉, critique_approach 노드들은 따로 하나의 section으로 모여있기 보단, 기존의 섹션 내부의 노드들과 연결되어 있어야 해. syntax에러가 나지 않게 주의해줘. 기존 코드에 critique_approach 노드와 엣지만 딱 올려서 추가하는 거야. 나머지는 무조건 동일해야 해.
 ---
 
 # 기존 Mermaid Code (여기에 critique_approach_1, critique_approach_2노드를 이어붙이면 돼.) 기존 코드 관련해선 노드 종류 및 색상 모두 변하지 않게 주의해 줘. 기존 코드에 critique_approach_1, critique_approach_2노드와 엣지만 딱 올려서 추가하는 거야. 나머지는 무조건 동일해야 해.
